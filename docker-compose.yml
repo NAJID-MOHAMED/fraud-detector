@@ -49,7 +49,7 @@ services:
       - zipkin
 
   apigw:
-      image: yusufgoobrr/apigw:latest
+      image: najidmhd/apigw:latest
       container_name: apigw
       ports:
         - "9090:9090"
