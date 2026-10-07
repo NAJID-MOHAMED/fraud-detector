@@ -3,7 +3,7 @@ services:
     container_name: postgres
     image: postgres
     environment:
-      POSTGRES_USER: amigoscode
+      POSTGRES_USER: najid
       POSTGRES_PASSWORD: password
       PGDATA: /data/postgres
     volumes:
@@ -39,7 +39,7 @@ services:
       - 5672:5672
       - 15672:15672 #for health console, like see your brokers and whatnot
   eureka-server:
-    image: yusufgoobrr/eureka-server:latest
+    image: najidmhd/eureka-server:latest
     container_name: eureka-server
     ports:
       - "8761:8761"
